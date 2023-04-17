@@ -1,0 +1,61 @@
+###Signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "seyrek@asd.com",
+    "password" : "azatsdasd23"
+}
+###Signin 
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "seyrek@asd.com",
+    "password" : "azatsdasd23"
+}
+
+### Get My Profile
+GET  http://localhost:3000/auth/me
+
+### Who am i
+GET  http://localhost:3000/auth/whoami
+
+### Signout
+POST  http://localhost:3000/auth/signout
+
+###Color 2
+GET  http://localhost:3000/auth/colors
+
+###COlor 
+GET  http://localhost:3000/auth/colors/red
+
+
+
+### Findd a particular user with a given ID 
+GET http://localhost:3000/auth/1
+
+### Find all users with a given email
+
+GET http://localhost:3000/auth?email=azatseyrek@hotmail.com
+
+### Update a user with a given ID
+
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "password": "aasdasdasd"
+}
+
+
+### Delete a user with a given ID
+
+DELETE http://localhost:3000/auth/2
+
+
+
+
+
+
+
